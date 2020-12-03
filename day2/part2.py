@@ -13,7 +13,7 @@ with open("input.txt", "r") as f:
 
         #Only index[0] or index[1] should match the letter,
         #never both or neither for valid passwords.
-        #That sounds like an XNOR aka != operator.
+        #That sounds like an XOR aka != operator.
         valid = (password[index[0]] == letter) != (password[index[1]] == letter)
         print([i+1 for i in index], letter, password, valid)
         if valid:
